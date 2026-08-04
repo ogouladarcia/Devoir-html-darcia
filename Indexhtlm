@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Devoir réalisé par OGOULA Darcia - L1 MPI -->
+    <title>L'Agriculture Gabonaise - OGOULA Darcia (L1 MPI)</title>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7f4;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Conteneur principal avec largeur maximale */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+        }
+
+        /* Titre principal */
+        h1 {
+            color: #1e6b37;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Menu de navigation */
+        nav {
+            background-color: #2e8b57;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 25px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        /* Effet :hover sur les liens du menu */
+        nav ul li a:hover {
+            background-color: #1e6b37;
+            color: #f4f7f4;
+        }
+
+        /* Section de présentation */
+        .presentation {
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #eaf4ec;
+            border-left: 5px solid #2e8b57;
+            border-radius: 4px;
+        }
+
+        .presentation h2 {
+            color: #1e6b37;
+            margin-top: 0;
+        }
+
+        /* Image */
+        .image-box {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #2e8b57;
+            border-radius: 8px;
+        }
+
+        /* Section Liste */
+        .cultures-list {
+            margin-bottom: 30px;
+        }
+
+        .cultures-list ul {
+            padding-left: 20px;
+        }
+
+        .cultures-list li {
+            margin-bottom: 8px;
+        }
+
+        /* Tableau (3 colonnes, 4 lignes) */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        table, th, td {
+            border: 1px solid #b0bec5;
+        }
+
+        th {
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            background-color: #fafafa;
+        }
+
+        /* Effet :hover sur les lignes du tableau */
+        tr:hover td {
+            background-color: #e0f2f1;
+        }
+
+        /* Formulaire */
+        .contact-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+        }
+
+        .contact-form h2 {
+            color: #1e6b37;
+            margin-top: 0;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Bouton Envoyer avec effet :hover */
+        .btn-submit {
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn-submit:hover {
+            background-color: #1e6b37;
+        }
+
+        /* Pied de page */
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #777777;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Titre principal -->
+        <h1>L'Agriculture au Gabon : Enjeux et Perspectives</h1>
+
+        <!-- Menu avec 4 liens -->
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#cultures">Cultures</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Section de présentation (titre + paragraphe) -->
+        <section id="presentation" class="presentation">
+            <h2>Présentation du secteur agricole</h2>
+            <p>
+                L'agriculture gabonaise joue un rôle stratégique dans le processus de diversification de l'économie nationale. 
+                Bien que le pays dispose d'un potentiel arable immense et d'un climat équatorial favorable, le secteur agricole 
+                est en pleine modernisation afin de réduire la dépendance aux importations alimentaires et d'assurer la souveraineté alimentaire.
+            </p>
+        </section>
+
+        <!-- Image illustrative -->
+        <div class="image-box">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRnaDfy4DKKyW2giiVLgvNeAcGXP3LjXBHcJrzG9TToRDEwU8kGcNaBTPjAm8tD5BuYDXNSjZgS5qqBQeY" alt="Plantation agricole au Gabon">
+        </div>
+
+        <!-- Liste d'au moins 5 éléments -->
+        <section id="cultures" class="cultures-list">
+            <h2>Principales productions agricoles au Gabon</h2>
+            <ul>
+                <li><strong>Le Manioc :</strong> Aliment de base consommé à travers tout le pays.</li>
+                <li><strong>La Banane Plantain :</strong> Culture vivrière majeure très prisée.</li>
+                <li><strong>Le Palmier à huile :</strong> Développé à grande échelle dans le cadre de l'agro-industrie.</li>
+                <li><strong>Le Cacao et le Café :</strong> Cultures de rente traditionnelles en zone rurale.</li>
+                <li><strong>L'Hévéa :</strong> Destiné à la production de caoutchouc naturel pour l'exportation.</li>
+            </ul>
+        </section>
+
+        <!-- Tableau (3 colonnes et 4 lignes) -->
+        <section class="table-section">
+            <h2>Données sur la production vivrière</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type de Culture</th>
+                        <th>Région Principale</th>
+                        <th>Utilisation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Manioc</td>
+                        <td>Ngounié & Woleu-Ntem</td>
+                        <td>Consommation locale</td>
+                    </tr>
+                    <tr>
+                        <td>Palmier à huile</td>
+                        <td>Estuaire & Moyen-Ogooué</td>
+                        <td>Agro-industrie & Export</td>
+                    </tr>
+                    <tr>
+                        <td>Banane Plantain</td>
+                        <td>Ogooué-Ivindo</td>
+                        <td>Consommation locale</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Formulaire (Nom, E-mail, Téléphone, Bouton Envoyer) -->
+        <section id="contact" class="contact-form">
+            <h2>Formulaire d'information</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="+241 00 00 00 00" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Envoyer</button>
+            </form>
+        </section>
+
+        <!-- Pied de page avec identification de l'étudiante -->
+        <footer>
+            <p>Travail réalisé par <strong>OGOULA Darcia</strong> – Étudiante en <strong>L1 MPI</strong></p>
+            <p>Exercice de rattrapage – Développement Frontend (HTML & CSS)</p>
+        </footer>
+    </div>
+
+</body>
+</html>
